@@ -224,7 +224,7 @@ def async():
     # The redirect_url is part of oAuth and where the user will be sent after consent. Appended to this URL will be the OAuth code or an error
     redirect_url = "http://" + _hosting_website + "/async_oauth_response?domain=" + domain + "&hosts=" + hosts + "&dns_provider=" + dns_provider
 
-    # Right now the call to get a permission requires the template in the path. Doesn't matter which one.  Spec is updating to eliminate this
+    # Call to get a permission
     asynchronousUrl = json_data['urlAsyncUX'] + '/v2/domainTemplates/providers/' + _provider + '/services/' + _template1 + '?' + \
             'domain=' + domain + \
             "&client_id=" + _provider + \
